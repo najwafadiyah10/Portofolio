@@ -91,6 +91,14 @@ section {
   margin-bottom: 20px;
 }
 
+.avatar img {
+  width: 100px;       /* atur ukuran foto */
+  height: 100px;      /* biar jadi kotak sama sisi */
+  object-fit: cover;  /* biar fotonya nggak ketarik */
+  border-radius: 50%; /* bikin jadi lingkaran */
+}
+
+
 .tags {
   margin-top: 10px;
 }
