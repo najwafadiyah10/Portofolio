@@ -1,97 +1,1202 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portofolio | Najwa Dzakirah Fadiyah</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta
+    name="description"
+    content="Portfolio of Najwa Dzakirah Fadiyah, an Information Technology student focused on Backend Development, RESTful APIs, and database systems."
+  >
+
+  <title>Najwa Dzakirah Fadiyah | Backend Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <nav class="navbar">
-    <div class="logo">NADZAFA's</div>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-    </ul>
-  </nav>
 
-<section class="hero" id="home">
-  <div class="container">
-    <div class="hero-left">
-      <div class="avatar"><img src="img/aku.jpg" alt=""></div>
-      <h1>Najwa Dzakirah Fadiyah</h1>
-      <p>Teknologi Informasi — Universitas Jember</p>
-      <div class="tags">
-        <span>Data Science</span>
-        <span>UI/UX</span>
-        <span>Frontend</span>
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+
+      <a href="#home" class="brand">
+        <span></span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li>
+          <a href="#home" class="nav-link active">Home</a>
+        </li>
+
+        <li>
+          <a href="#about" class="nav-link">About</a>
+        </li>
+
+        <li>
+          <a href="#projects" class="nav-link">Projects</a>
+        </li>
+
+        <li>
+          <a href="#experience" class="nav-link">Experience</a>
+        </li>
+
+        <li>
+          <a href="#skills" class="nav-link">Skills</a>
+        </li>
+
+        <li>
+          <a href="#contact" class="nav-link">Contact</a>
+        </li>
+      </ul>
+
+    </nav>
+  </header>
+
+
+  <main>
+
+    <!-- =========================
+         HERO
+    ========================== -->
+    <section class="hero section" id="home">
+
+      <div class="hero-decoration decoration-one"></div>
+      <div class="hero-decoration decoration-two"></div>
+
+      <div class="container hero-container">
+
+        <div class="hero-content reveal">
+
+          <p class="eyebrow">
+            HELLO, I'M
+          </p>
+
+          <h1 class="hero-title">
+            Najwa Dzakirah
+            <span>Fadiyah</span>
+          </h1>
+
+          <p class="hero-role">
+            Backend Developer
+          </p>
+
+          <p class="hero-description">
+            Information Technology student at the University of Jember
+            with hands-on experience in RESTful API development,
+            third-party API integration, and relational database systems.
+          </p>
+
+          <div class="hero-actions">
+
+            <a href="#projects" class="btn btn-primary">
+              View My Projects
+            </a>
+
+            <a
+              href="./documents/CV-Najwa-Dzakirah-Fadiyah.pdf"
+              class="btn btn-secondary"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View CV
+            </a>
+
+          </div>
+
+
+          <!-- <div class="hero-socials">
+
+            <a
+              href="https://github.com/najwafadiyah10"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="Najwa's GitHub"
+            >
+              <span
+                class="social-icon icon-github"
+                aria-hidden="true"
+              ></span>
+
+              GitHub
+            </a>
+
+
+            <a
+              href="https://www.linkedin.com/in/najwa-dzakirah-fadiyah"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="social-link"
+              aria-label="Najwa's LinkedIn"
+            >
+              <span
+                class="social-icon icon-linkedin"
+                aria-hidden="true"
+              ></span>
+
+              LinkedIn
+            </a>
+
+          </div> -->
+
+        </div>
+
+
+        <div class="hero-visual reveal">
+
+          <div class="profile-frame">
+
+            <div class="profile-outline"></div>
+
+            <img
+              src="img/profile/najwa-profile.png"
+              alt="Najwa Dzakirah Fadiyah"
+              class="profile-image"
+            >
+
+          </div>
+
+
+          <!-- <div class="hero-badge hero-badge-api">
+            REST API
+          </div>
+
+          <div class="hero-badge hero-badge-csharp">
+            C#
+          </div>
+
+          <div class="hero-badge hero-badge-database">
+            Database
+          </div> -->
+
+        </div>
+
       </div>
-    </div>
 
-    <div class="hero-right">
-      <h1>Halo! Aku Najwa 👋</h1>
-      <p>Mahasiswa semester 3 program studi Teknologi Informasi
-        <br>yang tertarik pada bidang data, UI/UX, dan Frontend. </br></p>
-      <div class="sosmed">
-      <a href="https://www.instagram.com/najwadzfy" target="_blank" title="">
-          <img src="img/ig.jpg" alt="">
-      </a>
-      <a href="https://wa.me/6285730709558" target="_blank" title="">
-          <img src="img/wasap.jpg" alt="">
-      </a>
-      <a href="https://github.com/najwafadiyah10" target="_blank" title="">
-          <img src="img/git.jpg" alt="">
-      </a>
-      <a href="https://x.com/njuwwa" target="_blank" title="">
-          <img src="img/twit.jpg" alt="">
-      </a>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section class="about" id="about">
-  <div class="tentang">
-    <h2>Sekilas Tentangku!</h2>
-    <p>Saya kerap disapa <b>Najwa</b> atau <b>Wawa</b>. Saya memiliki ketertarikan besar di dunia pengembangan web, khususnya di bidang frontend, UI/UX, dan data visualisasi.</p>
-    <p>Saya senang belajar hal baru, berkolaborasi dengan tim, dan berbagi solusi yang sederhana namun berdampak.</p>
-  </div>
 
-  <div class="pendidikan">
-    <h2>Pendidikan</h2>
-    <p>S1 Teknologi Informasi • 2021 - Sekarang</p>
-  </div>
-</section>
 
-<section class="project" id="projects">
-  <div class="project-kuliah">
-    <div class="academix">
-      <h2>ACADEMIX: Sistem Informasi Akademik</h2>
-      <p>Sistem informasi akademik sederhana untuk mahasiswa melakuakn krs dan pencatatan nilai oleh dosen.</p>
-      <p class="bahasa">
-        <span>Python</span>
+    <!-- =========================
+         ABOUT
+    ========================== -->
+    <section class="about section" id="about">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <p class="section-label">
+            01 — ABOUT
+          </p>
+
+          <h2>
+            Building systems with
+            <span>purpose.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+          <div class="about-intro reveal">
+
+            <p class="about-highlight">
+              I'm an Information Technology student with a strong
+              interest in Backend Development.
+            </p>
+
+            <p>
+              I enjoy building efficient systems and continuously
+              improving my technical skills through academic and
+              collaborative projects.
+            </p>
+
+          </div>
+
+
+          <div class="about-summary reveal">
+
+            <p>
+              Experienced in developing backend systems through academic
+              web and mobile projects. Skilled in RESTful API development,
+              third-party API integration, and relational database
+              management using C# and Laravel.
+            </p>
+
+            <p>
+              My involvement in collaborative projects and organizational
+              activities has also strengthened my communication, teamwork,
+              problem-solving, and adaptability.
+            </p>
+
+          </div>
+
+        </div>
+
+
+        <div class="expertise reveal">
+
+          <p class="expertise-title">
+            Core Expertise
+          </p>
+
+          <div class="expertise-list">
+
+            <span>REST API</span>
+            <span>C#</span>
+            <span>Database</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+     PROJECTS
+========================== -->
+<section class="projects section" id="projects">
+
+  <div class="container">
+
+    <div class="section-heading projects-heading reveal">
+
+      <div>
+
+        <p class="section-label">
+          02 — SELECTED PROJECTS
+        </p>
+
+        <h2>
+          Things I've
+          <span>built.</span>
+        </h2>
+
+      </div>
+
+      <p class="section-description">
+        A selection of academic projects showcasing my experience
+        in backend development, API integration, database management,
+        and multidisciplinary software development.
       </p>
+
     </div>
 
-    <div class="Puskesmas">
-      <h2>Sistem Informasi Manajemen Pelayanan Puskesmas Balung</h2>
-      <p>Sistem yang ditujukan untuk puskesmas balung dimana bisa digunakan untuk pencatatan, pengarsipan, dan pelaporan.</p>
-      <p class="bahasa">
-        <span>SQL</span>
-        <span>Python</span></p>
+
+    <div class="project-list">
+
+
+      <!-- RASA -->
+      <article class="project-item reveal">
+
+        <div class="project-number">
+          01
+        </div>
+
+
+        <div class="project-info">
+
+          <div class="project-meta">
+            <span>Backend Development</span>
+            <span>API Integration</span>
+          </div>
+
+
+          <h3>
+            RASA
+          </h3>
+
+
+          <p class="project-role">
+            Backend Developer
+          </p>
+
+
+          <p class="project-description">
+            A mobile-based elderly monitoring application designed
+            to provide motion, location, and weather information
+            while supporting data communication between elderly
+            users and their families.
+          </p>
+
+
+          <div class="project-contribution">
+
+            <h4>
+              My Contribution
+            </h4>
+
+            <ul>
+
+              <li>
+                Developed backend services and RESTful APIs using
+                C# and MonsterNet.
+              </li>
+
+              <li>
+                Integrated OpenWeatherMap and OpenStreetMap APIs
+                for weather and location data.
+              </li>
+
+              <li>
+                Managed application data and supported synchronization
+                between elderly and family applications.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="tech-stack">
+
+            <span>C#</span>
+            <span>MonsterNet</span>
+            <span>REST API</span>
+            <span>PostgreSQL</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-action">
+
+          <a
+            href="https://drive.google.com/file/d/1tDqOcpoNeUZgR6wkPkHCZ4fzRQKmKUP1/view?usp=sharing"
+            class="project-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- SIMPROK -->
+      <article class="project-item reveal">
+
+        <div class="project-number">
+          02
+        </div>
+
+
+        <div class="project-info">
+
+          <div class="project-meta">
+            <span>Web Development</span>
+            <span>Backend System</span>
+          </div>
+
+
+          <h3>
+            SIMPROK
+          </h3>
+
+
+          <p class="project-role">
+            Web Developer
+          </p>
+
+
+          <p class="project-description">
+            A web-based information system developed to manage
+            organizational work programs and document administration
+            more efficiently.
+          </p>
+
+
+          <div class="project-contribution">
+
+            <h4>
+              My Contribution
+            </h4>
+
+            <ul>
+
+              <li>
+                Contributed to backend development and feature
+                implementation.
+              </li>
+
+              <li>
+                Implemented relational database structures using
+                PostgreSQL.
+              </li>
+
+              <li>
+                Supported software testing and collaborated with
+                the development team.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="tech-stack">
+
+            <span>Laravel</span>
+            <span>PostgreSQL</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-action">
+
+          <a
+            href="https://simprok-unej.up.railway.app/"
+            class="project-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </article>
+
+
+
+      <!-- PUREPOND -->
+      <article class="project-item reveal">
+
+        <div class="project-number">
+          03
+        </div>
+
+
+        <div class="project-info">
+
+          <div class="project-meta">
+            <span>UI/UX Design</span>
+            <span>IoT Application</span>
+          </div>
+
+
+          <h3>
+            PurePond
+          </h3>
+
+
+          <p class="project-role">
+            UI/UX Designer
+          </p>
+
+
+          <p class="project-description">
+            An IoT-based mobile application designed to monitor
+            water quality and automate water replacement in
+            catfish ponds.
+          </p>
+
+
+          <div class="project-contribution">
+
+            <h4>
+              My Contribution
+            </h4>
+
+            <ul>
+
+              <li>
+                Designed user flows, wireframes, and interactive
+                prototypes.
+              </li>
+
+              <li>
+                Created a user-friendly mobile interface using Figma.
+              </li>
+
+              <li>
+                Collaborated with developers to align implementation
+                with the proposed design.
+              </li>
+
+            </ul>
+
+          </div>
+
+
+          <div class="tech-stack">
+
+            <span>Figma</span>
+            <span>Wireframing</span>
+            <span>Prototyping</span>
+
+          </div>
+
+        </div>
+
+
+        <div class="project-action">
+
+          <a
+            href="https://drive.google.com/file/d/1fCFPvolnzD0Ef_c5epKjOvCHPYZd3m5e/view?usp=drive_link"
+            class="project-button"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            View Project
+            <span>↗</span>
+          </a>
+
+        </div>
+
+      </article>
+
+
     </div>
+
   </div>
 
-  <div class="PickCycle ">
-    <h2>PickCycle: Sistem Aplikasi untuk Pengelolaan Setoran dan Pengambilan Sampah</h2>
-    <p>Sistem yang digunakan untuk pencatatan setoran dan pengambilan sampah serta melihat status pengambilan sampah</p>
-    <p class="bahasa">
-      <span>C#</span>
-      <span>SQL</span>
-    </p>
-  </div>
 </section>
+
+
+<!-- =========================
+     EXPERIENCE
+========================== -->
+<section class="experience section" id="experience">
+
+  <div class="container">
+
+    <div class="section-heading reveal">
+
+      <p class="section-label">
+        03 — EXPERIENCE
+      </p>
+
+      <h2>
+        Beyond
+        <span>code.</span>
+      </h2>
+
+    </div>
+
+
+    <!-- =========================
+         ORGANIZATION EXPERIENCE
+    ========================== -->
+    <div class="experience-group">
+
+      <div class="experience-group-heading reveal">
+
+        <p class="experience-group-number">
+          01
+        </p>
+
+        <h3>
+          Organization Experience
+        </h3>
+
+      </div>
+
+
+      <div class="timeline">
+
+        <article class="timeline-item reveal">
+
+          <div class="timeline-year">
+            2024 — PRESENT
+          </div>
+
+
+          <div class="timeline-content">
+
+            <p class="timeline-category">
+              Organization
+            </p>
+
+            <h3>
+              Human Resource Development Staff
+            </h3>
+
+            <p class="timeline-organization">
+              Himpunan Mahasiswa Teknologi Informasi — University of Jember
+            </p>
+
+            <p>
+              Contributed to member development programs, internal
+              organizational initiatives, and collaborative activities
+              to strengthen member engagement and team coordination.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+
+    <!-- =========================
+         COMMITTEE EXPERIENCE
+    ========================== -->
+    <div class="experience-group">
+
+      <div class="experience-group-heading reveal">
+
+        <p class="experience-group-number">
+          02
+        </p>
+
+        <h3>
+          Committee Experience
+        </h3>
+
+      </div>
+
+
+      <div class="timeline">
+
+        <!-- ITHINGS PIC -->
+        <article class="timeline-item reveal">
+
+          <div class="timeline-year">
+            2026 — PRESENT
+          </div>
+
+
+          <div class="timeline-content">
+
+            <p class="timeline-category">
+              Leadership
+            </p>
+
+            <h3>
+              Person in Charge — iThings HIMATIF
+            </h3>
+
+            <p class="timeline-organization">
+              Official Merchandise Program of HIMATIF
+            </p>
+
+            <p>
+              Led the management and development of HIMATIF's official
+              merchandise program while coordinating cross-functional
+              teams and monitoring program performance.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- ITHINGS TREASURER -->
+        <article class="timeline-item reveal">
+
+          <div class="timeline-year">
+            FEB — DEC 2025
+          </div>
+
+
+          <div class="timeline-content">
+
+            <p class="timeline-category">
+              Program Management
+            </p>
+
+            <h3>
+              Treasurer — iThings HIMATIF
+            </h3>
+
+            <p class="timeline-organization">
+              Official Merchandise Program of HIMATIF
+            </p>
+
+            <p>
+              Managed budgeting, transaction records, financial
+              administration, and reporting to support sustainable
+              program operations.
+            </p>
+
+          </div>
+
+        </article>
+
+
+        <!-- TIC -->
+        <article class="timeline-item reveal">
+
+          <div class="timeline-year">
+            APR — AUG 2025
+          </div>
+
+
+          <div class="timeline-content">
+
+            <p class="timeline-category">
+              Event Committee
+            </p>
+
+            <h3>
+              Technology Innovative Challenge 8.0
+            </h3>
+
+            <p class="timeline-organization">
+              National-Level Web Development Competition
+            </p>
+
+            <p>
+              Supported the planning and execution of a national-level
+              web development competition, coordinated across divisions,
+              and served as the Master of Ceremony for the final round.
+            </p>
+
+          </div>
+
+        </article>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+    <!-- =========================
+         SKILLS
+    ========================== -->
+    <section class="skills section" id="skills">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <p class="section-label">
+            04 — SKILLS
+          </p>
+
+          <h2>
+            My technical
+            <span>toolkit.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+  <!-- BACKEND & API -->
+  <article class="skill-category reveal">
+
+    <h3>
+      Backend & API
+    </h3>
+
+    <div class="skill-items">
+
+      <div class="skill-item">
+        <img
+          src="./img/logos/tech/csharp.png"
+          alt="C# logo"
+        >
+        <span>C#</span>
+      </div>
+
+      <div class="skill-item">
+        <img
+          src="./img/logos/tech/api.png"
+          alt="REST API icon"
+        >
+        <span>REST API</span>
+      </div>
+
+      <div class="skill-item">
+        <img
+          src="./img/logos/tech/postman.svg"
+          alt="Postman logo"
+        >
+        <span>Postman</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <!-- DATABASE -->
+  <article class="skill-category reveal">
+
+    <h3>
+      Database
+    </h3>
+
+    <div class="skill-items">
+
+      <div class="skill-item">
+        <img
+          src="./img/logos/tech/postgresql.jpg"
+          alt="PostgreSQL logo"
+        >
+        <span>PostgreSQL</span>
+      </div>
+
+      <div class="skill-item">
+        <img
+          src="./img/logos/tech/mysql.webp"
+          alt="MySQL logo"
+        >
+        <span>MySQL</span>
+      </div>
+
+    </div>
+
+  </article>
+
+
+  <!-- DEVELOPMENT & DESIGN -->
+  <article class="skill-category reveal">
+
+    <h3>
+      Development & Design
+    </h3>
+
+    <div class="skill-items">
+
+      <div class="skill-item">
+        <img
+          src="./img/logos/tech/git.avif"
+          alt="Git logo"
+        >
+        <span>Git</span>
+      </div>
+
+      <div class="skill-item">
+        <img
+          src="./img/logos/tech/github.png"
+          alt="GitHub logo"
+        >
+        <span>GitHub</span>
+      </div>
+
+      <div class="skill-item">
+        <img
+          src="./img/logos/tech/visual-studio.webp"
+          alt="Visual Studio logo"
+        >
+        <span>Visual Studio</span>
+      </div>
+
+      <div class="skill-item">
+        <img
+          src="./img/logos/tech/vscode.png"
+          alt="Visual Studio Code logo"
+        >
+        <span>VS Code</span>
+      </div>
+
+      <div class="skill-item">
+        <img
+          src="./img/logos/tech/figma.webp"
+          alt="Figma logo"
+        >
+        <span>Figma</span>
+      </div>
+
+    </div>
+
+  </article>
+
+</div>
+
+
+        <div class="soft-skills reveal">
+
+          <p class="soft-skills-title">
+            Soft Skills
+          </p>
+
+          <div class="soft-skill-list">
+
+            <span>Leadership</span>
+            <span>Teamwork</span>
+            <span>Problem Solving</span>
+            <span>Project Management</span>
+            <span>Time Management</span>
+            <span>Adaptability</span>
+            <span>Communication</span>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CERTIFICATES
+    ========================== -->
+    <section class="certificates section" id="certificates">
+
+      <div class="container">
+
+        <div class="section-heading reveal">
+
+          <p class="section-label">
+            05 — CERTIFICATES
+          </p>
+
+          <h2>
+            Learning &
+            <span>involvement.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="certificate-grid">
+
+
+          <article class="certificate-card reveal">
+
+            <img
+              src="img/certificates/myskill-backend.jpg"
+              alt="Backend in Website Development certificate"
+            >
+
+            <div class="certificate-content">
+
+              <p>
+                MySkill
+              </p>
+
+              <h3>
+                Backend in Website Development
+              </h3>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="certificate-card reveal">
+
+            <img
+              src="img/certificates/himatif-hrd.jpg"
+              alt="HIMATIF Human Resource Development certificate"
+            >
+
+            <div class="certificate-content">
+
+              <p>
+                HIMATIF
+              </p>
+
+              <h3>
+                Human Resource Development Staff
+              </h3>
+
+            </div>
+
+          </article>
+
+
+
+          <article class="certificate-card reveal">
+
+            <img
+              src="img/certificates/tic.jpg"
+              alt="Technology Innovative Challenge 8.0 certificate"
+            >
+
+            <div class="certificate-content">
+
+              <p>
+                TIC 8.0
+              </p>
+
+              <h3>
+                Technology Innovative Challenge Committee
+              </h3>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <!-- =========================
+         CONTACT
+    ========================== -->
+    <section class="contact section" id="contact">
+
+      <div class="container contact-container">
+
+        <div class="contact-content reveal">
+
+          <p class="section-label">
+            06 — CONTACT
+          </p>
+
+          <h2>
+            Let's build something
+            <span>meaningful.</span>
+          </h2>
+
+          <p>
+            I'm open to internship and collaboration opportunities
+            in Backend Development and software projects.
+          </p>
+
+
+          <div class="contact-actions">
+
+            <a
+              href="mailto:najwafadiyah1012@gmail.com"
+              class="btn btn-primary"
+            >
+              Email
+            </a>
+
+
+            <button
+              class="btn btn-secondary copy-email"
+              type="button"
+              data-email="najwafadiyah1012@gmail.com"
+            >
+              Copy Email
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <div class="contact-links reveal">
+
+          <a
+            href="mailto:najwafadiyah1012@gmail.com"
+            class="contact-link"
+          >
+
+            <span>Email</span>
+
+            <strong>
+              najwafadiyah1012@gmail.com
+            </strong>
+
+          </a>
+
+
+          <a
+            href="https://github.com/najwafadiyah10"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link"
+          >
+
+            <span>GitHub</span>
+
+            <strong>
+              github.com/najwafadiyah10
+            </strong>
+
+          </a>
+
+
+          <a
+            href="https://www.linkedin.com/in/najwa-dzakirah-fadiyah"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-link"
+          >
+
+            <span>LinkedIn</span>
+
+            <strong>
+              linkedin.com/in/najwa-dzakirah-fadiyah
+            </strong>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer class="footer">
+
+    <div class="container footer-container">
+
+      <p>
+        © 2026 Najwa Dzakirah Fadiyah
+      </p>
+
+      <a href="#home" class="back-to-top">
+        Back to top ↑
+      </a>
+
+    </div>
+
+  </footer>
+
 
   <script src="script.js"></script>
+
 </body>
 </html>
